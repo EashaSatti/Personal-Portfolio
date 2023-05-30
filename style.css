@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  /* background-image: url("img1.jpg"); */
+  background: rgb(0, 0, 0);
+  color: white;
+  overflow-x: hidden;
+}
+.logo {
+  height: 8vh;
+  width: 150px;
+}
+#header {
+  width: 100%;
+  height: 100vh;
+}
+.container {
+  padding: 10px 5%;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 10px 20px;
+  display: inline-block;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  position: relative;
+}
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+}
+nav ul li a:hover::after {
+  transition: 0.5s;
+  width: 100%;
+}
+.menu {
+  height: 25px;
+  border-radius: 4px;
+}
+.cross {
+  height: 15px;
+  border-radius: 4px;
+}
+nav .menu,
+.cross {
+  display: none;
+}
+.header-text {
+  margin-top: 15%;
+  font-size: 30px;
+}
+.header-text h1 {
+  font-size: 40px;
+  margin-top: 22px;
+}
+.header-text h1 span {
+  color: #ff004f;
+}
+/* -----------About--------------- */
+
+#about {
+  padding: 60px 0;
+  color: white;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-col-1 {
+  flex-basis: 35%; /* width of the column*/
+}
+.about-col-1 img {
+  height: 30vh;
+  width: 100%;
+  border-radius: 15px;
+}
+.about-col-2 {
+  flex-basis: 60%;
+}
+.sub-title {
+  font-size: 30px;
+  font-weight: 600;
+}
+.tab-title {
+  display: flex;
+  margin: 15px 0 40px;
+}
+.tab-links {
+  margin-right: 10px;
+  margin-bottom: 0px;
+  /* font-size: 17px; */
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  padding: 3px;
+}
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+.tab-links.active-link::after {
+  width: 50%;
+}
+/* .tab-links.active-link1::after {
+  width: 65%;
+}
+.tab-links.active-link2::after {
+  width: 80%;
+} */
+.tab-contents ul li {
+  list-style: none;
+  margin: 14px 0px;
+}
+.tab-contents ul {
+  padding-bottom: 50px;
+}
+.tab-contents ul li span {
+  font-size: 20px;
+  color: #ff004f;
+}
+.tab-contents {
+  display: none;
+}
+.tab-contents.active-tab {
+  display: block;
+}
+/* Contact */
+.ContactInfo {
+  margin: 20px;
+}
+span.emailLogo img {
+  height: 21px;
+  border-radius: 7px;
+  margin: 15px;
+}
+span.emailLogo {
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+}
+span.PhoneLogo img {
+  height: 20px;
+  border-radius: 6px;
+  margin: 15px;
+}
+span.PhoneLogo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+span.LinkLogo img {
+  height: 18px;
+  border-radius: 5px;
+  margin: 15px;
+}
+span.LinkLogo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+span.LinkLogo a {
+  color: white;
+  text-decoration: none;
+}
+.btn {
+  display: block;
+  margin: 30px 35px;
+  border: 1px solid #ff004f;
+  width: fit-content;
+  padding: 14px 50px;
+  text-decoration: none;
+  color: #fff;
+  transition: background 0.5s;
+  background-color: #ff004f;
+}
+
+/* project */
+.headingProject {
+  font-size: 20px;
+  color: #ff004f;
+}
+
+p.description {
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+div.project1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-right: 18px;
+  padding: 13px;
+}
+
+div.project2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 13px;
+}
+div.project img {
+  height: 20vh;
+  border-radius: 8px;
+}
+.img-effect {
+  transition: transform 0.5s;
+}
+.img-effect:hover {
+  transform: scale(1.1);
+}
+.project-content {
+  display: flex;
+  /* margin-right: 30px; */
+}
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  * {
+    /* background-color: #004f; */
+  }
+  .about-col-1 img {
+    height: 30vh;
+    width: 30vh;
+    border-radius: 15px;
+  }
+  nav .menu,
+  .cross {
+    display: block;
+  }
+
+  nav ul {
+    background-color: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -150px;
+    width: 150px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+  nav ul .cross {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  .btn {
+    padding: 10px 5px;
+  }
+}
