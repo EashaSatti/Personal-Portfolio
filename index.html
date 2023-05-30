@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="pf2.png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <img src="cross.png" alt="cross" class="cross" onclick="closemenu()">
+                </ul>
+                <span>
+                    <img src="menu.png" alt="menu" class="menu" onclick="openmenu()">
+                </span>
+            </nav>
+            <div class="header-text">
+                <p>FrontEnd Developer</p>
+                <h1>Hi, I'm <span>Easha Zeb Satti</span> <br />From Pakistan,<br />Rawalpindi.</h1>
+            </div>
+            <!-- ************About Section************* -->
+            <div class="allContent">
+                <div id="about">
+                    <!-- <div class="container"> -->
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="immg.jpeg">
+                        </div>
+                        <div class="about-col-2">
+                            <h1 class="sub-title">About Me</h1>
+                            <p>Passionate web developer with a strong enthusiasm for utilizing my skills in HTML, CSS,
+                                and JavaScript. Eager to secure
+                                an internship opportunity in the MERN stack, I am excited about the chance to work with
+                                technologies like MongoDB,
+                                Express.js, React.js, and Node.js. I am highly motivated to learn and apply these tools
+                                in developing dynamic and
+                                interactive web applications.</p>
+                            <div class="tab-title">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links active-link1" onclick="opentab('activities')">Activities</p>
+                                <p class="tab-links active-link2" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Technical Skills</span><br>FrontEnd Devolper(Html,CSS and JavaScript)
+                                        <br>Knowledge of version Control(Git and Github)
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>BS in IT</span><br>2021-2025</li>
+                                    <li><span>FSC in Engineering</span><br>2019-2021</li>
+                                    <li><span>Matric in Science</span><br>2017-2019</li>
+
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="activities">
+                                <ul>
+                                    <li><span>Socializing</span><br>Spending time with friends and loved ones, Attending
+                                        parties</li>
+                                    <li><span>Exploring New Things about Technologies</span><br>Engaging in ongoing
+                                        exploration and learning about the latest advancements and developments in
+                                        technology</li>
+                                    <li><span>Playing games</span><br>Badminton, Online multiplayer games</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- Projects Section -->
+        <div class="container">
+            <div class="project" id="projects">
+                <h1>Projects</h1>
+                <div class="project-content">
+
+                    <div class="project1">
+                        <p class="headingProject">Project 1:</p>
+                        <p class="description">Experience real-time number tracking with our dynamic counter, designed
+                            as my first website to practice and showcase
+                            JavaScript concepts. Easily increment or decrement values.</p>
+                        <a href="https://eashasatti.github.io/first-project/" target="_blank"><img src="counter.jpg"
+                                class="img-effect" /></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- ***********Contact*********** -->
+        <div class="container">
+            <div class="content" id="contact">
+                <h1>Contact Me</h1>
+                <div class="ContactInfo">
+                    <span class="emailLogo"><img src="em.png" alt="">eashasatti69@gmail.com</span>
+                    <span class="PhoneLogo"><img src="phone.png" alt="">03428334583</span>
+                    <!-- <span class="LinkLogo"><img src="linkin.png" alt=""> <a
+                            href="https://www.linkedin.com/in/easha-s-91b79823a/" target="_blank">LinkedIn</a>
+                    </span> -->
+                    <a href="MyCV.pdf" download class="btn">Download CV</a>
+                </div>
+            </div>
+        </div>
+        <script src="Script.js"></script>
+</body>
+
+</html>
